@@ -1,0 +1,31 @@
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.presentation {
+    height: 100vh;
+    /* background-color: rgb(227, 201, 178); */
+}
+.presentation img {
+    animation: moveUpDown 5s infinite alternate ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0) translateZ(0);
+    }
+    50% {
+        transform: translateY(-10px) translateZ(20px);
+    }
+}
+
+.presentation:hover img {
+    transform: translateY(0) translateZ(0);
+}
+
+.member {
+    height: 300px;
+    width: 225px;
+}
