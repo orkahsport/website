@@ -58,3 +58,35 @@ header {
 .w-450 {
     max-width: 450px;
 }
+
+@media screen and (max-width: 768px) {
+    .presentation {
+        flex-direction: column;
+    }
+    .container-image {
+        display: none;
+    }
+    .fade-in-out {
+        padding: 0 15px 0;
+    }
+    .product {
+        margin: auto 30px auto;
+    }
+    .product > div {
+        flex-direction: column;
+    }
+    .product > div:last-child {
+        flex-direction: column-reverse;
+    }
+    .product-image {
+        max-width: 350px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container-image {
+        display: flex;
+    }  
+    .fade-in-out {
+        padding: 0;
+    }  
+}
