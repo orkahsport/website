@@ -6,87 +6,108 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Orkah sport</title>
 </head>
 <body>
-    <header class="d-flex justify-content-between p-3 position-fixed w-100 z-1">
+    <header class="d-flex justify-content-between p-3 position-fixed w-100">
         <h1>Lorem Ipsum</h1>
         <div class="d-flex align-items-center">
-            <div class="mx-3"><a href="#" class="text-decoration-none text-dark fw-bold">PRODUIT</a></div>
-            <div class="mx-3"><a href="#" class="text-decoration-none text-dark fw-bold">ÉQUIPE</a></div>
-            <div class="mx-3"><a href="#" class="text-decoration-none text-dark fw-bold">CONTACT</a></div>
+            <div class="mx-3"><a href="#product" class="text-decoration-none text-dark fw-bold">PRODUIT</a></div>
+            <div class="mx-3"><a href="#team" class="text-decoration-none text-dark fw-bold">ÉQUIPE</a></div>
+            <div class="mx-3"><a href="#contact" class="text-decoration-none text-dark fw-bold">CONTACT</a></div>
         </div>
     </header>
     <main>
-        <section class="presentation d-flex align-items-center">
+        <section class="presentation d-flex align-items-center overflow-hidden position-relative">
+            <video autoplay muted loop class="video-bg position-absolute object-fit-cover top-0 left-0 w-100 h-100">
+                <source src="asset/clip/run.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay  position-absolute top-0 left-0 w-100 h-100"></div>
             <div class="d-flex justify-content-center w-100">
                 <img src="asset/images/product.png" alt="Produit">
             </div>
             <div class="fade-in-out w-100">
-                <h2>Orkah'Tex</h2>
-                <p>Lorem ipsum</p>
-                <!-- <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p> -->
-                <p>
+                <h2 class="text-white">Orkah'Tex</h2>
+                <p id="description-typewriter" class="text-white">Notre produit est <span id="typewriter"></span></p>
+                <p class="text-white">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lectus arcu. Nam elementum imperdiet neque eu sagittis. 
                     Nulla sagittis lacus at nunc molestie, id cursus mi blandit
                 </p>
-                <button>Découvrir</button>
+                <a href="#product" class="text-decoration-none"><button>Découvrir</button></a>
             </div>
         </section>
-        <section class="product">
-            <div>
-
+        
+        <section id="product" class="product m-5">
+            <h2 class="text-center">Notre produit</h2>
+            <div class="d-flex align-items-center m-5">
+                <div class="w-100">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies purus quis urna tempor elementum. Phasellus vitae semper eros, ut bibendum erat. Sed congue elementum sapien. Praesent congue pellentesque lorem eget hendrerit. Maecenas lacinia, sem vel dapibus varius, massa augue congue nunc, eu convallis sapien nunc a dui.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies purus quis urna tempor elementum. Phasellus vitae semper eros, ut bibendum erat. Sed congue elementum sapien. Praesent congue pellentesque lorem eget hendrerit. Maecenas lacinia, sem vel dapibus varius, massa augue congue nunc, eu convallis sapien nunc a dui.</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                    <img src="asset/images/product.png" alt="Produit">
+                </div>
+            </div>
+            <div class="d-flex align-items-center m-5">
+                <div class="d-flex justify-content-center w-100">
+                    <img src="asset/images/product.png" alt="Produit">
+                </div>
+                <div class="w-100">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies purus quis urna tempor elementum. Phasellus vitae semper eros, ut bibendum erat. Sed congue elementum sapien. Praesent congue pellentesque lorem eget hendrerit. Maecenas lacinia, sem vel dapibus varius, massa augue congue nunc, eu convallis sapien nunc a dui.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies purus quis urna tempor elementum. Phasellus vitae semper eros, ut bibendum erat. Sed congue elementum sapien. Praesent congue pellentesque lorem eget hendrerit. Maecenas lacinia, sem vel dapibus varius, massa augue congue nunc, eu convallis sapien nunc a dui.</p>
+                </div>
             </div>
         </section>
-        <section class="team">
-            <div>
-                <p>Notre équipe</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lectus arcu. Nam elementum imperdiet neque eu sagittis. 
-                    Nulla sagittis lacus at nunc molestie, id cursus mi blandit
+        <section id="team" class="team d-flex flex-column justify-content-evenly p-5">
+            <div class="d-flex align-items-center flex-column">
+                <h2 class="text-center mb-4">Notre équipe</h2>
+                <p class="text-center">
+                    Aenean suscipit sit amet dolor et interdum. Proin sed semper lacus. In condimentum viverra dignissim. Nam at suscipit elit. Nunc sed porttitor lorem. In vestibulum pretium ex, et sollicitudin augue dictum pharetra. Nunc vitae justo a purus luctus auctor bibendum eu magna. In et purus nec felis eleifend commodo. In in efficitur nisl, quis efficitur sapien. Nulla lobortis magna eu tortor imperdiet, ut consequat ipsum sollicitudin.
                 </p>
             </div>
-            <div class="">
-                <div class="d-flex align-items-center flex-column">
-                    <img class="member" src="asset/images/guillaume.jpg" alt="guillaume">
-                    <p>SATRE Guillaume</p>
-                    <p>CEO de ORKAH</p>
+            <div class="carousel d-flex overflow-hidden">
+                <div class="d-flex align-items-center flex-column mx-4">
+                    <img class="member rounded mb-2" src="asset/images/guillaume.jpg" alt="guillaume">
+                    <p class="fw-semibold fs-6 mb-1">SATRE Guillaume</p>
+                    <p class="fw-light text-center mx-1">CEO de ORKAH</p>
                 </div>
-                <div class="d-flex align-items-center flex-column">
-                    <img class="member" src="asset/images/cloclo.jpg" alt="Chloé">
-                    <p>CORDINA Chloé</p>
-                    <p>Responsable Design / Conception</p>
+                <div class="d-flex align-items-center flex-column mx-4">
+                    <img class="member rounded mb-2" src="asset/images/cloclo.jpg" alt="Chloé">
+                    <p class="fw-semibold fs-6 mb-1">CORDINA Chloé</p>
+                    <p class="fw-light text-center mx-1">Responsable Design & Conception</p>
                 </div>
-                <div class="d-flex align-items-center flex-column">
-                    <img class="member" src="asset/images/jojo.jpg" alt="Johanna">
-                    <p>ERNY Johanna</p>
-                    <p>Responsable Ingénierie Produit / Matériaux</p>
+                <div class="d-flex align-items-center flex-column mx-4">
+                    <img class="member rounded mb-2" src="asset/images/jojo.jpg" alt="Johanna">
+                    <p class="fw-semibold fs-6 mb-1">ERNY Johanna</p>
+                    <p class="fw-light text-center mx-1">Responsable Ingénierie Produit & Matériaux</p>
                 </div>
-                <div class="d-flex align-items-center flex-column">
-                    <img class="member" src="asset/images/clara.jpg" alt="Clara">
-                    <p>GUILLAUME Clara</p>
-                    <p>Responsable RSE</p>
+                <div class="d-flex align-items-center flex-column mx-4">
+                    <img class="member rounded mb-2" src="asset/images/clara.jpg" alt="Clara">
+                    <p class="fw-semibold fs-6 mb-1">GUILLAUME Clara</p>
+                    <p class="fw-light text-center mx-1">Responsable RSE</p>
                 </div>
-                <div class="d-flex align-items-center flex-column">
-                    <img class="member" src="asset/images/romain.jpg" alt="Romain">
-                    <p>MERMET-GUYENET Romain</p>
-                    <p>Responsable Juridique / Finances</p>
+                <div class="d-flex align-items-center flex-column mx-4">
+                    <img class="member rounded mb-2" src="asset/images/romain.jpg" alt="Romain">
+                    <p class="fw-semibold fs-6 mb-1">MERMET-GUYENET Romain</p>
+                    <p class="fw-light text-center mx-1">Responsable Juridique & Finances</p>
                 </div>
-                <div class="d-flex align-items-center flex-column">
-                    <img class="member" src="asset/images/amelie.jpg" alt="Amélie">
-                    <p>AUDIGIER Amélie</p>
-                    <p>Responsable Marketing / Communication</p>
+                <div class="d-flex align-items-center flex-column mx-4">
+                    <img class="member rounded mb-2" src="asset/images/amelie.jpg" alt="Amélie">
+                    <p class="fw-semibold fs-6 mb-1">AUDIGIER Amélie</p>
+                    <p class="fw-light text-center mx-1">Responsable Marketing & Communication</p>
                 </div> 
             </div>
         </section>
-        <section class="contact"></section>
+        <section id="contact" class="contact m-5">
+            <h2 class="text-center">Contactez-nous</h2>
+        </section>
     </main>
     <footer>
-        <p>Orkah Sport - Copytight © 2024 - Tous droits réservés</p>
+        <p class="text-center">Orkah Sport - Copytight © 2024 - Tous droits réservés</p>
     </footer>
+    <script src="node_modules/typewriter-effect/dist/core.js" defer></script>
     <script src="asset/js/script.js" defer></script>
 </body>
 </html>

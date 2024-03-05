@@ -1,11 +1,23 @@
 header {
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+    z-index: 3;
 }
 
 .presentation {
     height: 100vh;
+    background-color: #FDF8F0;
+    z-index: 1;
     /* background-color: rgb(227, 201, 178); */
+}
+
+.video-bg {
+    z-index: -2;
+}
+
+.overlay {
+    background-color: rgba(71, 68, 63, 0.7);
+    z-index: -1;
 }
 .presentation img {
     animation: moveUpDown 5s infinite alternate ease-in-out;
@@ -23,6 +35,15 @@ header {
 
 .presentation:hover img {
     transform: translateY(0) translateZ(0);
+}
+
+.team {
+    height: 100vh;
+    background-color: rgb(253, 248, 240);
+}
+
+.carousel div:not(:first-child) {
+    display: none;
 }
 
 .member {
