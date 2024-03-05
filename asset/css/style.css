@@ -24,17 +24,16 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-@keyframes moveUpDown {
-    0%, 100% {
-        transform: translateY(0) translateZ(0);
-    }
-    50% {
-        transform: translateY(-10px) translateZ(20px);
-    }
-}
-
 .presentation:hover img {
     transform: translateY(0) translateZ(0);
+}
+
+#typewriter {
+    color: #FDF8F0;
+}
+
+.discovery {
+    background-color: #FDF8F0 !important;
 }
 
 .team {
@@ -45,4 +44,17 @@ header {
 .member {
     height: 300px;
     width: 225px;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0) translateZ(0);
+    }
+    50% {
+        transform: translateY(-10px) translateZ(20px);
+    }
+}
+
+.w-450 {
+    max-width: 450px;
 }

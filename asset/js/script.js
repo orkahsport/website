@@ -21,20 +21,38 @@ typewriter
 const carouselContainer = document.querySelector('.carousel');
 
 const options = {
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     loop: true, 
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
         {
-            breakpoint: 768,
+          breakpoint: 1600,
+          settings: {
+              slidesToShow: 5
+          }
+        },
+        {
+          breakpoint: 1350,
+          settings: {
+              slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 1100,
+          settings: {
+              slidesToShow: 3
+          }
+        },
+        {
+            breakpoint: 865,
             settings: {
                 slidesToShow: 2
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 600,
             settings: {
                 slidesToShow: 1
             }
