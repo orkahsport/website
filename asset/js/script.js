@@ -16,3 +16,30 @@ typewriter
   .pauseFor(1000)
   .deleteChars(7)
   .start();
+
+
+const carouselContainer = document.querySelector('.carousel');
+
+const options = {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    loop: true, 
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+};
+
+$(carouselContainer).slick(options);

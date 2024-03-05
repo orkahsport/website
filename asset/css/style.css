@@ -42,10 +42,6 @@ header {
     background-color: rgb(253, 248, 240);
 }
 
-.carousel div:not(:first-child) {
-    display: none;
-}
-
 .member {
     height: 300px;
     width: 225px;
