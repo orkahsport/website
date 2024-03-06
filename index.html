@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +18,16 @@
     <header class="d-flex justify-content-between p-3 position-fixed w-100">
         <h1>Lorem Ipsum</h1>
         <div class="d-flex align-items-center">
+            <div class="mx-3"><a href="#society" class="text-decoration-none text-dark fw-bold">SOCIÉTÉ</a></div>
             <div class="mx-3"><a href="#product" class="text-decoration-none text-dark fw-bold">PRODUIT</a></div>
             <div class="mx-3"><a href="#team" class="text-decoration-none text-dark fw-bold">ÉQUIPE</a></div>
-            <div class="mx-3"><a href="#contact" class="text-decoration-none text-dark fw-bold">CONTACT</a></div>
         </div>
     </header>
     <main>
         <section class="presentation d-flex justify-content-center align-items-center overflow-hidden position-relative">
             <video autoplay muted loop class="video-bg position-absolute object-fit-cover top-0 left-0 w-100 h-100">
-                <source src="asset/clip/run.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                <source src="asset/clip/video.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas cette vidéo.
             </video>
             <div class="overlay position-absolute top-0 left-0 w-100 h-100"></div>
             <div class="container-image justify-content-center w-100">
@@ -37,9 +37,8 @@
                 <div class="w-450">
                     <h1 class="text-white fs-2">Orkah'Tex</h1>
                     <p id="description-typewriter" class="text-white fs-4">Notre produit est <span id="typewriter" class="fw-semibold"></span></p>
-                    <p class="text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lectus arcu. Nam elementum imperdiet neque eu sagittis. 
-                        Nulla sagittis lacus at nunc molestie, id cursus mi blandit
+                    <p class="text-white fw-light">
+                        Le t-shirt avec des microcapsules nutrives qui vous accompagne dans votre quotidien sportif.
                     </p>
                     <button class="btn discovery">
                         <a href="#product" class="text-decoration-none text-dark">Découvrir</a>
@@ -47,35 +46,75 @@
                 </div>
             </div>
         </section>
-        
-        <section id="product" class="product m-5">
-            <h2 class="text-center">Notre produit</h2>
-            <div class="d-flex align-items-center m-5">
-                <div class="w-100">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies purus quis urna tempor elementum. Phasellus vitae semper eros, ut bibendum erat. Sed congue elementum sapien. Praesent congue pellentesque lorem eget hendrerit. Maecenas lacinia, sem vel dapibus varius, massa augue congue nunc, eu convallis sapien nunc a dui.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies purus quis urna tempor elementum. Phasellus vitae semper eros, ut bibendum erat. Sed congue elementum sapien. Praesent congue pellentesque lorem eget hendrerit. Maecenas lacinia, sem vel dapibus varius, massa augue congue nunc, eu convallis sapien nunc a dui.</p>
+        <section id="society" class="society d-flex justify-content-center flex-column position-relative mb-5 p-5">
+            <h2 class="text-center w-100 mb-5">Notre société</h2>
+            <div class="d-flex align-items-center">
+                <div class="d-flex flex-column w-100">
+                    <p>
+                        Orkah émerge comme une entreprise novatrice, une véritable start-up fondée en 2022 par six étudiants de l'école SeaTech.
+                        Au cœur de sa création réside une vision de renouveau et d'engagement écologique.
+                    </p>
+                    <p>
+                        En tant que jeunes diplômés en ingénierie, nous sommes pleinement conscients des enjeux environnementaux et sociétaux qui nous entourent. 
+                        C'est ainsi qu'a germé l'idée d'Orkah, une entreprise incarnant nos valeurs et notre identité.
+                    </p>
+                    <p>
+                        Notre sensibilité environnementale conjuguée à notre passion pour le sport a donné naissance à Orkah.
+                        En unissant écologie et amour de l'activité physique, nous avons créé une gamme d'équipements sportifs à la fois écologiques et nutritifs.
+                        Ces produits permettront aux sportifs de se concentrer pleinement sur leur pratique, 
+                        en minimisant les contraintes liées à la fatigue et aux carences nutritionnelles.
+                    </p>
                 </div>
                 <div class="d-flex justify-content-center w-100">
-                    <img src="asset/images/product.png" alt="Produit" class="product-image">
-                </div>
-            </div>
-            <div class="d-flex align-items-center m-5">
-                <div class="d-flex justify-content-center w-100">
-                    <img src="asset/images/product.png" alt="Produit" class="product-image">
-                </div>
-                <div class="w-100">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies purus quis urna tempor elementum. Phasellus vitae semper eros, ut bibendum erat. Sed congue elementum sapien. Praesent congue pellentesque lorem eget hendrerit. Maecenas lacinia, sem vel dapibus varius, massa augue congue nunc, eu convallis sapien nunc a dui.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies purus quis urna tempor elementum. Phasellus vitae semper eros, ut bibendum erat. Sed congue elementum sapien. Praesent congue pellentesque lorem eget hendrerit. Maecenas lacinia, sem vel dapibus varius, massa augue congue nunc, eu convallis sapien nunc a dui.</p>
+                    <img src="asset/images/team.jpg" alt="Équipe" class="team-image rounded">
                 </div>
             </div>
         </section>
-        <section id="team" class="team d-flex flex-column justify-content-evenly p-5">
-            <div class="d-flex align-items-center flex-column">
-                <h2 class="text-center mb-4">Notre équipe</h2>
-                <p class="text-center">
-                    Aenean suscipit sit amet dolor et interdum. Proin sed semper lacus. In condimentum viverra dignissim. Nam at suscipit elit. Nunc sed porttitor lorem. In vestibulum pretium ex, et sollicitudin augue dictum pharetra. Nunc vitae justo a purus luctus auctor bibendum eu magna. In et purus nec felis eleifend commodo. In in efficitur nisl, quis efficitur sapien. Nulla lobortis magna eu tortor imperdiet, ut consequat ipsum sollicitudin.
-                </p>
+        <section id="product" class="product">
+            <h2 class="text-center">Notre produit</h2>
+            <div class="d-flex align-items-center">
+                <div class="d-flex justify-content-center w-100">
+                    <img src="asset/images/product.png" alt="Produit" class="product-image">
+                </div>
+                <div class="w-100">
+                    <p>
+                        Le T-shirt avec des microcapsules est une innovation dans le domaine des vêtements de sport. 
+                        Conçu à partir de matériaux écologiques, équitables et recyclés, il intègre des microcapsules dans ses fibres.
+                    </p>
+                    <p>
+                        Ces microcapsules renferment différents principes actifs et compléments alimentaires nutritifs. 
+                        Pendant les séances de sport, sous l'effet de la transpiration, les capsules se dissolvent, 
+                        permettant ainsi aux nutriments d'être absorbés par la peau.
+                    </p>
+                    <p>
+                        Cette absorption permet aux nutriments de se répandre dans le corps du sportif, 
+                        lui fournissant l'énergie nécessaire pour continuer ses efforts sur le long terme.
+                    </p>
+                </div>
             </div>
+            <div class="d-flex align-items-center">
+                <div class="w-100">
+                    <p>
+                        L'innovation du T-shirt avec des microcapsules repose sur une approche écologique et responsable. 
+                        Fabriqué à partir de matériaux respectueux de l'environnement, 
+                        ce vêtement intègre des microcapsules contenant divers principes actifs et compléments alimentaires.
+                    </p>
+                    <p>
+                        Pendant l'activité sportive, la transpiration provoque la dissolution des capsules, 
+                        permettant ainsi aux nutriments d'être absorbés par la peau.
+                    </p>
+                    <p>
+                        Cette absorption assure une diffusion efficace des nutriments dans le corps du sportif, 
+                        lui fournissant l'énergie nécessaire pour maintenir ses performances tout au long de son entraînement.
+                    </p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                    <img src="asset/images/product.png" alt="Produit" class="product-image">
+                </div>
+            </div>
+        </section>
+        <section id="team" class="team d-flex flex-column p-5">
+            <h2 class="text-center mb-5">Notre équipe</h2>
             <div class="overflow-hidden">
                 <div class="carousel d-flex">
                     <div class="d-flex align-items-center flex-column mx-4">
@@ -111,12 +150,24 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact m-5">
-            <h2 class="text-center">Contactez-nous</h2>
-        </section>
     </main>
-    <footer>
-        <p class="text-center">Orkah Sport - Copytight © 2024 - Tous droits réservés</p>
+    <footer class="d-flex m-5">
+        <div class="d-flex justify-content-center w-100">
+            <div class="d-flex justify-content-center flex-column ml-3">
+                <p class="footer-mobile">Orkah Sport</p>
+                <p class="footer-mobile">Copytight © 2024</p>
+                <p class="footer-mobile">Tous droits réservés</p>
+                <p class="footer-desktop">Orkah Sport - Copytight © 2024 - Tous droits réservés</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center w-100">
+            <div class="d-flex justify-content-center flex-column">
+                <p><a href="https://www.instagram.com/orkah_sport/" class="text-decoration-none text-dark">Nous suivre</a></p>
+                <p>Mentions légales</p>
+                <p>Conditions générales de vente</p>
+                <p>Politique de confidentialité</p>
+            </div>
+        </div>
     </footer>
     <script src="node_modules/typewriter-effect/dist/core.js" defer></script>
     <script src="asset/js/script.js" defer></script>

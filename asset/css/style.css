@@ -36,9 +36,15 @@ header {
     background-color: #FDF8F0 !important;
 }
 
-.team {
-    height: 100vh;
+.society {
     background-color: rgb(253, 248, 240);
+}
+.team {
+    background-color: rgb(253, 248, 240);
+}
+
+.team-image {
+    width: 500px;
 }
 
 .member {
@@ -56,9 +62,87 @@ header {
 }
 
 .w-450 {
-    max-width: 450px;
+    max-width: 550px;
 }
 
+@media screen and (max-width: 1300px) {
+    .society {
+        height: auto;
+    }
+    .society > div > div:nth-child(1) {
+        margin: 0 25px 0 0;        
+    }
+    .society > div > div:nth-child(2) {
+        margin: 0 0 0 25px;        
+    }
+    .team-image {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .product > div > div  {
+        margin: 0 25px;
+    }
+    .product > div {
+        margin: 3rem 0;
+    }
+    .team-image {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1000px) and (min-width: 800px){
+    .product {
+        margin: 3rem 0;
+    }
+    .product > div > div:nth-child(1)  {
+        margin: 0 10px 0 40px;
+    }
+    .product > div > div:nth-child(2)  {
+        margin: 0 40px 0 10px;
+    }
+    .product-image {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .society > div {
+        flex-direction: column-reverse;
+    }
+    .society > div > div:nth-child(1) {
+        margin: 25px 0 0;
+    }
+    .society > div > div:nth-child(2) {
+        margin: 0 0 25px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .product-image {
+        max-width: 350px;
+    }
+    .footer-desktop {
+        display: none;
+    }
+    .footer-mobile {
+        display: block;
+    }
+}
+@media screen and (max-width: 800px){
+    .product {
+        margin: 3rem;
+    }
+    .product > div:nth-child(2)  {
+        flex-direction: column;
+    }
+    .product > div:nth-child(3)  {
+        flex-direction: column-reverse;
+    }
+    .product > div > div {
+        margin: 0;
+    }
+    .product > div:nth-child(2) > div:nth-child(1), .product > div:nth-child(3) > div:nth-child(2) {
+        margin: 0 0 30px;
+    }
+}
 @media screen and (max-width: 768px) {
     .presentation {
         flex-direction: column;
@@ -81,6 +165,56 @@ header {
     .product-image {
         max-width: 350px;
     }
+}
+@media screen and (max-width: 590px){
+    .product-image {
+        max-width: 325px;
+    }
+    footer {
+        flex-direction: column-reverse;
+    }
+    footer > div > div {
+        width: 100%;
+    }
+    footer > div > div > p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 530px){
+    .team-image {
+        min-width: 350px;
+    }
+}
+@media screen and (min-width: 1300px){
+    .society {
+        min-height: 100vh;
+    }
+    .society > h2 {
+        position: absolute;
+        top: 3rem;
+        margin-left: -3rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .product > div > div  {
+        margin: 0;
+    }
+    .product > div {
+        margin: 3rem;
+    }    
+}
+@media screen and (min-width: 1000px) {
+    .product {
+        margin: 3rem;
+    }
+}
+@media screen and (min-width: 880px) {
+    .footer-desktop {
+        display: block;
+    }
+    .footer-mobile {
+        display: none;
+    }    
 }
 @media screen and (min-width: 768px) {
     .container-image {
