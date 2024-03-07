@@ -4,6 +4,67 @@ header {
     z-index: 3;
 }
 
+.menu-burger {
+    display: flex;
+    position: relative;
+    width: 40px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.menu-burger span {
+    height: 4px;
+    background-color: #000;
+}
+
+.menu-burger span:nth-child(1) {
+    top: 0;
+    transition: .25s ease-in-out;
+}
+
+.menu-burger span:nth-child(1).active {
+    transform: rotate(45deg);
+    top: 16px;
+    transition: .25s ease-in-out;
+}
+
+.menu-burger span:nth-child(2) {
+    opacity: 1;
+    transition: .25s ease-in-out;
+}
+
+.menu-burger span:nth-child(2).active {
+    opacity: 0;
+    transition: .25s ease-in-out;
+}
+
+.menu-burger span:nth-child(3) {
+    bottom: 0;
+    transition: .25s ease-in-out;
+}
+
+.menu-burger span:nth-child(3).active {
+    transform: rotate(-45deg);
+    bottom: 16px;
+    transition: .25s ease-in-out;
+}
+
+.menu-mobile {
+    display: flex;
+    background-color: #FDF8F0;
+    z-index: 4;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+.menu-mobile.active {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
 .presentation {
     height: 100vh;
     background-color: #FDF8F0;
@@ -172,6 +233,9 @@ header {
     }
 }
 @media screen and (max-width: 590px){
+    .menu-desktop {
+        display: none;
+    }
     footer {
         flex-direction: column-reverse;
     }
@@ -235,5 +299,13 @@ header {
     .fade-in-out {
         padding: 0;
         justify-content: center;
+    }
+}
+@media screen and (min-width: 591px) {
+    .menu-burger, .menu-mobile {
+        display: none;
+    }
+    .menu-desktop {
+        display: flex;
     }
 }

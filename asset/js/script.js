@@ -1,3 +1,29 @@
+// Responsive menu
+const header = document.querySelector('header');
+const menu = document.querySelector('.menu-burger');
+const mobile = document.querySelector('.menu-mobile');
+const mobileContainer = document.querySelector('.menu-mobile').children[0];
+
+const toggleMenu = () => {
+   if (menu.classList.contains('click')) {
+      setTimeout(() => { mobile.classList.add('d-none'); }, 500);
+      mobile.classList.remove('active');
+      menu.classList.remove('click');
+      Array.from(menu.children).forEach(child => child.classList.remove('active'));
+   } else {
+      mobile.classList.remove('d-none');
+      mobile.classList.toggle('active');
+      menu.classList.add('click');
+      Array.from(menu.children).forEach(child => child.classList.add('active'));
+   }
+};
+
+menu.addEventListener('click', toggleMenu);
+
+Array.from(mobileContainer.children).forEach(child => {
+   child.addEventListener('click', toggleMenu);
+});
+
 const descriptionDynamic = document.getElementById('typewriter');
 
 let typewriter = new Typewriter(descriptionDynamic, {
@@ -18,6 +44,7 @@ typewriter
   .start();
 
 
+// Carousel
 const carouselContainer = document.querySelector('.carousel');
 
 const options = {
