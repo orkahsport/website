@@ -100,9 +100,6 @@ header {
     .product > div > div:nth-child(2)  {
         margin: 0 40px 0 10px;
     }
-    .product-image {
-        max-width: 400px;
-    }
 }
 @media screen and (max-width: 1000px) {
     .society > div {
@@ -113,6 +110,9 @@ header {
     }
     .society > div > div:nth-child(2) {
         margin: 0 0 25px;
+    }
+    .front-product-image, .back-product-image {
+        max-width: 300px;
     }
 }
 @media screen and (max-width: 880px) {
@@ -162,8 +162,8 @@ header {
     .product > div:last-child {
         flex-direction: column-reverse;
     }
-    .product-image {
-        max-width: 350px;
+    .front-product-image, .back-product-image {
+        max-width: 275px;
     }
 }
 @media screen and (max-width: 630px){
@@ -172,9 +172,6 @@ header {
     }
 }
 @media screen and (max-width: 590px){
-    .product-image {
-        max-width: 325px;
-    }
     footer {
         flex-direction: column-reverse;
     }
@@ -212,8 +209,14 @@ header {
     .product {
         margin: 3rem;
     }
+    .front-product-image, .back-product-image  {
+        max-width: 350px;
+    }
 }
 @media screen and (min-width: 881px) {
+    .product-image {
+        max-width: 400px;
+    }
     .footer-desktop {
         display: block;
     }
@@ -232,5 +235,5 @@ header {
     .fade-in-out {
         padding: 0;
         justify-content: center;
-    }  
+    }
 }
